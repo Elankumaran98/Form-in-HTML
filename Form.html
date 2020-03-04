@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Elankumaran"/>
+    </head>
+    <body>
+        <h1 id="top">Login Form</h1>
+        <a href="#multi">Select multiple choice</a>
+        <h6>data hide ->method="post"
+        </h6>
+        <form method="POST" action="kumaran.txt">
+            <p>
+                <label for="username">Username : </label><input type="text" name="username" id="username">
+            </p>
+            <p>
+                <label for="password">Password : </label><input type="password" name="Password" minlength="6" id="password">
+            </p>
+            <p>
+                <input type="submit" value="Send">
+            </p>
+        </form>
+
+        <hr>
+        <h1>Other</h1>
+        <form>
+            <label for="place">Place Holder : </label><input type="text"name="Age" placeholder="Age" id="place"><br><br>
+            <label for="size">Size & MaxLength: </label><input type="text" name="Gender" size="10" maxlength="6" minlength="4" id="size"><br><br>
+            <label for="comment">Comments : </label><textarea name="Comments" cols="25" rows="3" placeholder="Enter your comment" id="comment"></textarea>
+        </form>
+        <hr>
+        <form enctype="multipart/form-data">
+            <p>
+                <label for="name">Name    : </label><input type="text" name="Name" id="name"><br><br>
+                <label for="email">Email   : </label><input type="text" name="Email" id="email"><br><br>
+                <label for="subject">Subject : </label><input type="text" name="Subject" id="subject"><br><br>
+                <label>Comment : </label><textarea name="Comment" placeholder="Enter Your Comment" cols="25" rows="1"></textarea><br><br>
+                <input type="submit" name="Submit">
+            </p>
+
+            <hr>
+
+            <h3>Radio Button</h3>
+            <p>
+                <label>Gender :</label>
+                <input type="radio" name="request" value="Male" checked> Male
+                <input type="radio" name="request" value="Female"> Female<br><br>
+                <input type="submit" name="Submit">
+            </p>
+
+            <hr>
+
+            <h3>Cheack Box</h3>
+            <!--cheack box-->
+            <p>
+                <label>Your Favourite Games :</label>
+                <input type="checkbox" name="game[]" value="Cricket"> Cricket
+                <input type="checkbox" name="game[]" value="Chess">Chess
+                <input type="checkbox" name="game[]" value="Badmintion">Badmintion
+                <input type="checkbox" name="game[]" value="Football">Football<br><br>
+                <input type="submit" name="Submit">
+            </p>
+
+            <hr>
+
+            <h3>Dropdown method</h3>
+            <!--dropdown box-->
+            <h5>Select single choice</h5>
+            <p>
+                <select name="Day" id="Day">
+                    <option value="">date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <input type="submit" name="Submit"> 
+            </p><br><br>
+
+            <hr>
+
+
+            <h5 id="multi">Select multiple choice</h5>
+            <p>
+                <select name="Sport" multiple>
+                    <option value="Cricket"><lCricket</option>
+                    <option value="Chess">Chess</option>
+                    <option value="Badmintion">Badmintion</option>
+                    <option value="Football">Football</option>
+                    <input type="submit" name="Submit"> 
+                </select>
+            </p>
+            <a href="#top">Back to Top</a>
+
+            <hr>
+
+            <p>
+                <label>File Uploading : </label> <input type="file" name="upload">
+            </p>
+        </form><br>
+
+        <hr>
+
+        <label>Labal</label>
+        <form>
+            <p>
+                <!--/radio box-->
+                <label>Gender :</label>
+                <input type="radio" name="box" value="Male" id="Male"><label for="Male">Male </label>
+                <input type="radio" name="box" value="Female" id="Female"><label for="Female">Female</label>
+            </p>
+
+            <hr>
+
+            <p>
+                <!--/fieldset-->
+                <fieldset>
+                    <legend>Name</legend>
+                    <label for="First_name">First_name : </label><input type="text" id=First_name name="First_name"><br><br>
+                    <label for="Mid_name">Mid_name : </label><input type="text" id=Mid_name name="Mid_name"><br><br>
+                    <label for="Last_name">Last_name : </label><input type="text" id=Last_name name="Last_name"><br><br>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Others</legend>
+                    <label for="Age">Age : </label><input type="text" name="Age" id="Age"><br><br>
+                    <label for="Contect">Contect : </label><input type="text" name="Contect" id="Contect"><br><br>
+                    <label for="NIC">NIC : </label><input type="text" name="NIC" id="NIC"><br><br>
+                </fieldset>
+                <input type="submit" name="Send">
+            </p>
+
+            <p>
+                <!--/new fetures in html 5-->
+                <label for="Email">Email : </label>
+                <input type="email" id="Email" name="Email" required><br><br>
+                <label for="DOB">DOB : </label>
+                <input type="date" id="DOB" name="DOB"><br><br>
+                <label for="Age">Age : </label>
+                <input type="number" id="Age" name="Age" required max="99" min="01"><br><br>
+                <label for=""price>price Range</label>
+                <input type="range" name="price" id="price" min="100" max="1000" step="100"><br><br>
+                <label for="web">Web link</label>
+                <input type="url" id="web" name="web"><br><br>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time"><br><br>
+                <label for="week">Week</label>
+                <input type="week" id="week" name="week"><br><br>
+                <label for="search">Search</label>
+                <input type="search" id="search" name="search"><br><br>
+                <label>My home</label><br>
+                <!--/iframe-->
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.00653981273!2d80.09095161461276!3d9.680481393070671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe55f7505593c9%3A0xa704b251504e36b!2sInunchith%20thoddam%20kandhasaamy%20kovil!5e0!3m2!1sen!2slk!4v1583208214650!5m2!1sen!2slk"
+                  width="100" 
+                  height="100" 
+                  frameborder="10" 
+                  style="border:0;" 
+                  allowfullscreen="">
+                </iframe><br><br>
+
+                <label>Buttubamma song</label><br>
+                <iframe width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/xSvWyx1fpV4" 
+                  frameborder="10" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe><br><br>
+                <!--/audio input-->
+                <audio src="F:\Elankumaran\Music\song\song.mp3" controls>Song</audio><br><br>
+                <video src="F:\Elankumaran\videos\Viber Videos\video.mp4" controls width="250">Video</video><br><br>
+                <input type="submit" name="Send"> 
+            </p>
+        </form>
+
+        <hr>
+
+        <h3>Meta tag</h3>
+        <p>
+            <label>Tamil Language : ஸநா்ை்ரபுஹ   பு்வமப்கஹமபாஹோபைரபௌேரதம</label><br>
+        </p>
+    </body>
+</html>
